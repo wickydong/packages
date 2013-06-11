@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>
+攻击价格计算
+</title>
+</head>
+<body>
+<h2>攻击价格计算</h2>
+<p>请选择域名所属套餐</p>
+<br>
+<form name="input" action="http://172.4.3.11:5000/plus" method="post">
+<select name="packages">
+{% for p,v in [("D_Plus","个人豪华"),("DP_Plus","个人专业"),("D_Extra","企业套餐I"),("D_Expert","企业套餐II"),("D_Ultra","企业套餐III"),("DP_Extra","企业创业"),("DP_Expert","企业标准"),("DP_Ultra","企业旗舰")] %}
+<option value="{{ p }}">{{ v }}</option>
+{% endfor %}
+
+<input type="submit" value="确定">
+<!--
+<option value="个人豪华">个人豪华</option>
+<option value-"个人专业">个人专业</option>
+<option value="企业套餐1">企业套餐1</option>
+<option value="企业套餐2">企业套餐2</option>
+<option value="企业套餐3">企业套餐3</option>
+<option value="企业创业">“企业创业</option>”
+<option value="企业标准">企业标准</option>
+<option value="企业旗舰">企业旗舰</option>
+-->
+</select>
+</form>
+</body>
+
