@@ -1,0 +1,34 @@
+
+<!-->
+<form >
+应付金额：
+{% if oneprice %}
+<input type="text" name="oneprice" value={{ oneprice }}元>
+{% endif %}
+<br/>
+应付金额：
+{% if twoprice %}
+<input type="text" name="twoprice" value={{ twoprice }}元>
+{% endif %}
+<br/>
+应付金额：
+{% if threeprice %}
+<input type="text" name="threeprice" value={{ threeprice }}元>
+{% endif %}
+<br/>
+应付金额：
+{% if fourprice %}
+<input type="text" name="fourprice" value={{ fourprice }}元>
+{% endif %}
+<br/>
+应付金额：
+{% if fiveprice %}
+<input type="text" name="fiveprice" value={{ fiveprice }}元>
+{% endif %}
+<br/>
+应付金额：
+{% if sixprice %}
+<input type="text" name="sixprice" value={{ sixprice }}元>
+{% endif %}
+</form>
+<-->
