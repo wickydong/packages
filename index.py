@@ -40,8 +40,8 @@ def plus():
         return render_template("eightip.html")
     elif request_form == "DP_Ultra":
         return render_template("twelveip.html")
-    else:
-        return render_template("erro.html")
+    else:pass
+        pass
 
 @app.route("/qps",methods=["POST"])
 def qps():
